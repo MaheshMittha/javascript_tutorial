@@ -53,3 +53,19 @@ let n = 15;
 // console.log(7946 <= 800); // fasle 
 // console.log(2024 <= 1993); //  false
 
+
+let num1 = 10;
+let num2 = "10";
+
+if (num1 == num2) {
+    console.log("equal");
+} else {
+ console.log("not equal");   
+}
+
+
+
+
+
+
+
