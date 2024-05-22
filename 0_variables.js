@@ -133,13 +133,7 @@ c = 20;  //  but with const it's can not reinitilize >>> Error - Assignment to c
 // 1 Creation Phase
 // - Craetes global or window objects
 // - Setup heap memory for storing varibales and objects
-//-  Intialize function and variables with undefined
-
-
-// 2 Excuection Phase
-
-// - 
-
+//-  Intialize function and variables with undefined.
 
 
 
