@@ -34,33 +34,45 @@
 
 // Requitement  3:14:24
 
-let user = 19;
-let isCitizen = true;
-let isVoterregistered = false;
+// let user = 19;
+// let isCitizen = true;
+// let isVoterregistered = false;
 
-if ((user) => 18) {
-  if (isCitizen) {
-    if (isVoterregistered) {
-      console.log("Your are eligibe to vote");
-    } else {
-      console.log("Your are not a member of registered voter group ");
-    }
-  } else {
-    console.log("You are not citenzeship of our country");
-  }
-} else {
-  console.log("Your are not eligible to vote (Younger)");
-}
+// if ((user) => 18) {
+//   if (isCitizen) {
+//     if (isVoterregistered) {
+//       console.log("Your are eligibe to vote");
+//     } else {
+//       console.log("Your are not a member of registered voter group ");
+//     }
+//   } else {
+//     console.log("You are not citenzeship of our country");
+//   }
+// } else {
+//   console.log("Your are not eligible to vote (Younger)");
+// }
 
 
 // Write programm s given Number is even or odd 
 
-let num = 11;
+// let num = 11;
 
-if (num % 2  == 0) {
-    console.log("num is even");
-} else {
-    console.log("num is odd");
-}
+// if (num % 2  == 0) {
+//     console.log("num is even");
+// } else {
+//     console.log("num is odd");
+// }
 
 
+// Write a program given numb is positive , negative or zero
+
+
+// const digit = 10;
+
+// if (digit === 0) {
+//     console.log("digit is zero");
+// } else if (digit > 0) {
+// console.log("digit is postive");
+// } else {
+//     console.log("digit is negative");
+// }
