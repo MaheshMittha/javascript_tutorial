@@ -134,29 +134,13 @@ c = 20;  //  but with const it's can not reinitilize >>> Error - Assignment to c
 // - Craetes global or window objects
 // - Setup heap memory for storing varibales and objects
 //-  Intialize function and variables with undefined.
+*/
 
 
+const accountID = 10;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+accountID = 50;
+console.log(accountID);
 
 
 
