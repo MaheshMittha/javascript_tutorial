@@ -130,9 +130,9 @@
 
 // The following variables are defined in the global scope
 
-const num1 = 20;
-const num2 = 3;
-const myName = "Mahesh";
+// const num1 = 20;
+// const num2 = 3;
+// const myName = "Mahesh";
 
 // This function is defined in the global scope
 
@@ -207,17 +207,11 @@ const myName = "Mahesh";
 // console.log(counter.getCount());
 // console.log(counter.decrement());
 
-
-const result = (function (a , b) {
-  console.log(a + b);
-return a + b;
-}) (2,3)
-console.log(result);
-
-
-
-
-
+// const result = (function (a , b) {
+//   console.log(a + b);
+// return a + b;
+// }) (2,3)
+// console.log(result);
 
 
 
