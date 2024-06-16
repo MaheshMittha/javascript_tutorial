@@ -219,10 +219,13 @@ let myNumForEachArr = myNum.forEach((ele, index)=> {
 // console.log(languagesArray); // Returned an Array of strings
 
 
+/*
 let scoreCard = [35, 48, 58, 67, 32, 78, 66, 90, 89, 95];
 let scoreCardArray = scoreCard.map((curElem)=> {
 return (`${curElem * 2}`)
 })
+
+*/
 
 
 //console.log(scoreCard);
@@ -247,9 +250,9 @@ return (`${curElem * 2}`)
 
 // Program 1
 
-let persons = ["peter", "john", "doe", "alice", "donald"];
-persons.push("lucy")
-//console.log(persons); // output  ["peter", "john", "doe", "alice" ,"lucy"]
+// let persons = ["peter", "john", "doe", "alice", "donald"];
+// persons.push("lucy")
+// //console.log(persons); // output  ["peter", "john", "doe", "alice" ,"lucy"]
 
 
 
@@ -371,6 +374,301 @@ console.log(myLang);
 // let shiftArray = originalArray.shift();
 // console.log(shiftArray);
 // console.log(originalArray);
+
+
+// 5 JavaScript Array splice() Method
+
+
+// JavaScript Array splice() Method is an inbuilt method in JavaScript that is used to change the contents of an array by removing or replacing existing elements and/or adding new elements. It modifies the original array and returns an array of the removed elements.
+
+// Return Value - While it mutates the original array in place, still it returns the list of removed items. In case there is no removed array it returns an empty array.
+
+ 
+let arrayOfFruites = ["Apple", "Banana", "Guava", "Orange", "Mango"];
+//console.log(arrayOfFruites.splice(1, 3, "sweetcorn", "beetroot" ,"carrot"));
+//console.log(arrayOfFruites);
+
+
+let placesToVisit = ["California","Texas", "Floria", "Virginia", "Washington" , "Ohio"];
+//console.log(placesToVisit.splice(1,4 , "Massachusetts" , "Michigan" , "Minnesota" ));
+//console.log(placesToVisit);
+
+
+let orrArray = [1,2,3,4,5,6,7,8,9,10];
+//console.log(orrArray.splice(3, 5, 10, 20, 30,40,50));
+//console.log(orrArray);
+
+
+let currerncies = ["INR", "USDollar", "Rubel", "Dinar", "Euro", "SingaporeDollar"];
+//console.log(currerncies.splice(1,3));
+//console.log(currerncies);
+
+
+// const months = ["jan", "feb", "mar", "apr", "may"];
+// const indexToUpdate = months.indexOf("mar");
+// months.splice(indexToUpdate, 2, "March")
+// console.log(months);
+
+
+// let years = [2000,  20001, 2002, 2003, 2004, 2005, 2006, 2007,2008, 2009, 2010];
+// let indexToUpdateYear = years.indexOf(2005);
+//console.log(indexToUpdateYear);
+// years.splice(indexToUpdateYear, 5 , 1993  );
+// console.log(years);
+
+
+
+
+let numberOfMonths = ["Jan", "Feb", "Mar", "Apr", "may"];
+const indexToDeleteMonths = numberOfMonths.indexOf("Apr");
+numberOfMonths.splice(indexToDeleteMonths, 3, "April" )
+//console.log(numberOfMonths);
+
+
+
+//let cityOfUnistedStates = ["NewYork0", "Chicago1", "SanDiego2", "Asutin3", "SanFrancisco4", "Dallas5"];
+//console.log(cityOfUnistedStates.splice(3,2));
+// cityOfUnistedStates.splice(-1, 0, "more")
+//cityOfUnistedStates.splice(cityOfUnistedStates.length, 0, "myelement")
+//console.log(cityOfUnistedStates);
+
+
+
+let compLang = ["HTML" , "CSS", "JavaScript", "Express", "CSS" ];
+//console.log(compLang.splice(-1, 0, "Nodejs"));
+//compLang.splice(compLang.length, 0, "Java")
+//compLang.splice( 1, 0, "MongoDB"), 
+//console.log(compLang);
+
+
+
+// 6 JavaScript String indexOf() Method
+
+// Syntax   str.indexOf(searchValue , index);
+// The indexOf() method is case sensitive.
+
+
+
+
+// The JavaScript String indexOf() method finds the index of the first occurrence of the argument string in the given string. 
+//The value returned is 0-based.
+let numbers = [1, 4, 2, 3, 4, 5, 6, 7, 4, 6, 7, 1, 2, 8];
+//console.log(numbers.indexOf(8));
+
+
+let myNumbers = [10,20,30,40,50,60,70,80,90,100 ]
+//console.log(myNumbers.indexOf(50,1));
+
+
+let str = "Departed Train";
+//console.log(str.indexOf("Train"));
+
+
+// function func () {
+//     let str = "Departed Train"
+//     let index = str.indexOf('train');
+//     console.log(index);
+// }
+
+// func();
+
+
+// 7 JavaScript String lastIndexOf() Method
+
+//The lastIndexOf() method in JavaScript is used to search for the last occurrence of a specified substring within a string.
+
+// It returns the index of the last occurrence of the specified substring, or -1 if the substring is not found.
+
+// defines the starting index from where the searchvalue is to be searched in the base string backward
+
+
+
+/*
+
+function findIndex () {
+
+    let arr  = ["a", "b", "c", "d", "a", "b", "c", "d" ,"a"];
+    let newarr = arr.indexOf("d", 1)
+    console.log(newarr);
+
+    let lastindex = arr.lastIndexOf("a", 1);
+    console.log(lastindex);
+    
+}
+
+findIndex();
+
+*/
+
+
+// Program // 
+
+
+let arrayofNumbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9, 6];
+let result1 = arrayofNumbers.lastIndexOf(6, 5); // Output 3  ( After 5th index it ignores the rest of values ) 
+//console.log(result1);
+
+
+let result2 = arrayofNumbers.indexOf(6, 5) // Output is 6 ( index number start from start )
+//console.log(result2);
+
+
+// 7 JavaScript String includes() Method
+
+// The includes() method returns true if a string contains a specified string. Otherwise, it returns false.
+// Syntax - string.includes(searchvalue, start)
+
+
+
+let newStr = ["HTML", "CSS","JavaScript","Reactjs", "css", "Nodejs","Express", "Mongoose",];
+let current = newStr.includes("css", 1);
+//console.log(current);
+
+let multipleNumbers = [0,1,2,3,4,5,6];
+let searchIncludes = multipleNumbers.includes(16);
+//console.log(searchIncludes);
+
+
+
+
+// 8 JavaScript Array find() Method
+
+// The find() method in JavaScript returns the first element that satisfies a provided test function.
+// It iterates through each array element, ignoring empty slots, and returns undefined if no match is found. 
+// The original array remains unchanged.
+
+
+
+/*
+const findNumberArray = [1,2,3,4,5,6,7,8,6,9,10];
+const findResult = findNumberArray.find((currElem)=> { 
+    return currElem >= 5
+})
+
+console.log(findNumberArray);
+console.log(findResult);
+*/
+
+
+// 9  JavaScript Array findIndex() Method
+
+
+const arrList = [ 10,20,30,40,50,60,70,80,90,100,200,300,400];
+const resultOne = arrList.map((currElem)=>{
+   return currElem * 1;
+})
+
+const findIndex = resultOne.findIndex((currElem)=> {
+   return currElem >= 60
+})
+
+console.log(findIndex);
+console.log(resultOne);
+
+
+
+// 10 JavaScript Array filter() Method
+
+// Return value: It returns an array of elements that pass the test and an empty array if no elements pass the test. 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 6 JavaScript Array slice() Method
+
+// The Array slice() method returns selected elements in an array as a new array. It selects from a given start, up to a (not inclusive) given end. This method does not change the origina
+
+// Return value -  This method returns a new array containing some portion of the original array. 
+
+
+/*
+const sliceFun = function () {
+    let arr = [1,2,3,4,5,6,7,8,9];
+    let newarr = arr.slice(3,4)
+    console.log(newarr);
+}
+
+sliceFun();
+
+*/
+
+
+// 7 Searching Filtering Methods 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
