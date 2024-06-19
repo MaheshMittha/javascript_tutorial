@@ -1,61 +1,45 @@
-// An array in JavaScript is a data structure used to store multiple values in a single variable. 
+// An array in JavaScript is a data structure used to store multiple values in a single variable.
 //It can hold various data types and allows for dynamic resizing.
 // Elements are accessed by their index, starting from 0.
-
 
 // const arr = [ "John", "Andrew", "Lucy", "Diana"];
 
 // console.log(arr.length-1);
 
-
 // let arr = [];
 // console.log( typeof arr);
 
-
 // 1. Creating an Array using Array Literal
- 
 
-let myArray = [ "John", "Andrew", "Lucy", "Diana"];
+let myArray = ["John", "Andrew", "Lucy", "Diana"];
 //console.log(myArray);
-
-
 
 // 2. Creating an Array using Array Constructor (JavaScript new Keyword)
 
-
-let fruites =  new Array("Banana", "Apple", "orange");
+let fruites = new Array("Banana", "Apple", "orange");
 //console.log(fruites);
-
-
 
 // 1 . Accessing Elements
 
-let score = [1, 2 , 3, 4, 5];
-//console.log(score[2]);  // Output 3 
+let score = [1, 2, 3, 4, 5];
+//console.log(score[2]);  // Output 3
 
 let myCources = ["HTML", "CSS", "JavaScript", "Java"];
-//console.log(myCources[2]); // output JavaScript 
-
-
+//console.log(myCources[2]); // output JavaScript
 
 // 2. Modyfying Elements value
 
-
-let myEcoomerce =  ["Amazon", "Flipkart", "Myntra" , "Microsoft"];
-myEcoomerce[2] = "Apple"; 
+let myEcoomerce = ["Amazon", "Flipkart", "Myntra", "Microsoft"];
+myEcoomerce[2] = "Apple";
 //console.log(myEcoomerce);  // Output ["Amazon", "Flipkart", "Apple" , "Microsoft"];
 
-
 let player = ["Virat", "rohit", "hardik", "bumrah"];
-let result = player[3] = "Chahal";
+let result = (player[3] = "Chahal");
 //console.log(player);
 
+// 3. Array tranversal / Array Iteration
 
-
-
-// 3. Array tranversal / Array Iteration 
-
-// 1. For of loop / Itreation 
+// 1. For of loop / Itreation
 
 // let techBrands = ["Accenture", "Braclays", "TCS", "Wipro", "Infosys" ];
 
@@ -63,20 +47,16 @@ let result = player[3] = "Chahal";
 //     console.log(item);  // Output ["Accenture", "Braclays", "TCS", "Wipro", "Infosys" ]
 // }
 
-
 // let vegetables = ["spinach", "bringle", "ladyfinger", "cabbage", "cauliflower"];
 
 // for ( let item of vegetables ) {
 //     console.log(item);
 // }
 
-
-
 // let array = [1,2,3,4,5,6,7,8,9,10];
 // for( let item of array) {
 //     console.log(item);
 // }
-
 
 // let str = "Hello";
 
@@ -84,30 +64,25 @@ let result = player[3] = "Chahal";
 //     console.log(item);
 // }
 
-
 // const map = new Map([
 //     ['key1', 'value1'],
 //     ['key2', 'value2'],
 //     ['key3', 'value3']
 //   ]);
-   
+
 //   for (const [key, value] of map) {
 //     console.log(`Key: ${key}, Value: ${value}`);
 //   }
 
-
-// 2 . For loop   
+// 2 . For loop
 
 // let sports = ["cricket", "football", "basketball", "hockey", "chess"];
 
-// for ( let i = 0 ; i < sports.length ; i++ ) { 
+// for ( let i = 0 ; i < sports.length ; i++ ) {
 //    console.log(sports[i]);  // output   ["cricket", "football", "basketball", "hockey", "chess"]
 // }
 
-
-
-// 3.  for in loop 
-
+// 3.  for in loop
 
 // let language = ["German", "japanese", " French" ," Spanish" , "English"] ;
 
@@ -115,77 +90,63 @@ let result = player[3] = "Chahal";
 //     console.log(item);
 // }
 
-
-
 // 4. JavaScript Array forEach() Method
 
-
 // The forEach() method calls a function for each element in an array.
-// It does not return a new array and does not modify the original array. 
+// It does not return a new array and does not modify the original array.
 //It’s commonly used for iteration and performing actions on each array element.
 
 // simple meaning - Perform action on each element of an array
 
-
 let myStates = [
-    "Maharashtra",
-    "Gujrat",
-    "Andra Pradesh",
-    "Telnagana",
-    "Karntaka",
-    "Kerala"
-]
+  "Maharashtra",
+  "Gujrat",
+  "Andra Pradesh",
+  "Telnagana",
+  "Karntaka",
+  "Kerala",
+];
 
 myStates.forEach((ele, index, arr) => {
-    //console.log(`${ele} ${index}`);
-    // console.log(arr);
-})
+  //console.log(`${ele} ${index}`);
+  // console.log(arr);
+});
 
-
-
-//  1 Pragram Practice 
+//  1 Pragram Practice
 
 // let myCitys = ["Pune" ,"Hyderbad", "Banglore", "Solapur", "Chennai"];
 
 // let myForEeachArr = myCitys.forEach((ele , index, )=> {
-//     console.log((`${index} ${ele}`)); 
+//     console.log((`${index} ${ele}`));
 // })
-
 
 // 2 . Write a programm multiply Each Element with 2
 
-// Pragram Start Here // 
+// Pragram Start Here //
 
-let myNum = [1,2,3,4,5,6,7];
+let myNum = [1, 2, 3, 4, 5, 6, 7];
 
-let myNumForEachArr = myNum.forEach((ele, index)=> {
-    // console.log(` ${ele * 2 }`);
-    
-})
-// Pragram End Here // 
+let myNumForEachArr = myNum.forEach((ele, index) => {
+  // console.log(` ${ele * 2 }`);
+});
+// Pragram End Here //
 
-
-// For Each Prgram Start Here // 
+// For Each Prgram Start Here //
 
 // let myNumbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 // let myNumbersMap = myNumbers.forEach((curElem)=>{
 //     console.log(( `${curElem * 2}`));
 // })
 
-// For Each Pragram End Here // 
-
-
-
+// For Each Pragram End Here //
 
 // 5 . JavaScript Array map() Method
 
-// The map() method creates an array by calling a specific function on each element present in the parent array. 
+// The map() method creates an array by calling a specific function on each element present in the parent array.
 // It is a non-mutating method. This method iterates over an array and calls the function on every element of an array.
 // Simple - it'screates a new array with transformed elements
 
-
-// Question 1.  Map Program Start Here // 
-
+// Question 1.  Map Program Start Here //
 
 // let myFruitesArray = ["Apple", "Banana", "Grapes", "Sweetcorn"];
 // let myMapArray = myFruitesArray.map((ele , index )=> {
@@ -195,11 +156,9 @@ let myNumForEachArr = myNum.forEach((ele, index)=> {
 // console.log(myMapArray);
 // console.log(myFruitesArray);
 
-// Program End Here // 
+// Program End Here //
 
-
-
-// Question 2 Map Pragram Start Here // 
+// Question 2 Map Pragram Start Here //
 
 // let numbers  = [10,20,30,40,50];
 // let myNumMap =  numbers.map((ele) => {
@@ -208,16 +167,14 @@ let myNumForEachArr = myNum.forEach((ele, index)=> {
 
 // console.log(myNumMap);
 
-// Program End Here // 
-
+// Program End Here //
 
 // let languages = ["Japanese", "Korean", "Chinese", "French", "English"];
 // let languagesArray = languages.map((curElem)=> {
-//   return (`${curElem}`)  
+//   return (`${curElem}`)
 // })
 
 // console.log(languagesArray); // Returned an Array of strings
-
 
 /*
 let scoreCard = [35, 48, 58, 67, 32, 78, 66, 90, 89, 95];
@@ -227,34 +184,26 @@ return (`${curElem * 2}`)
 
 */
 
-
 //console.log(scoreCard);
 //console.log(scoreCardArray);
 
-
-
 // **********How to Perform CRUD Operations on JavaScript Object ?******************** //
 
-// The operations are Create, Read, Update, and Delete. 
+// The operations are Create, Read, Update, and Delete.
 //With these operations, we can create, take input, manipulate & destroy the objects.
 //JavaScript Objects are a collection of keys, values or properties/attributes, and entries.
 // The values can be any data type as well as JavaScript functions, arrays, etc.
-
-
 
 // 1 Push Method - add element to the end of the arry
 
 // Explation - The push() method in JavaScript adds one or more elements to the end of an array
 // and returns the new length of the array.
 
-
 // Program 1
 
 // let persons = ["peter", "john", "doe", "alice", "donald"];
 // persons.push("lucy")
 // //console.log(persons); // output  ["peter", "john", "doe", "alice" ,"lucy"]
-
-
 
 // Program 2
 
@@ -266,7 +215,6 @@ console.log(myPushArr);
 */
 
 // Program 3
-
 
 /*
 let myLanguage = ["French", "Japanese", "Chinese", "Spanish", "German"];
@@ -280,34 +228,24 @@ let vegetables = ["parsnip", "potato"];
 let moreVeg = ["celery", "beetroot"];
 //console.log(vegetables.push(...moreVeg));
 
-
-let sports = ["soccer", "baseball" ];
+let sports = ["soccer", "baseball"];
 let total = sports.push("football", "swimming");
 //console.log(total);
 
-
-
-
-
-
-
 // 2 The pop() method removes (pops) the last element of an array
 
-// Explanation - The pop() method removes (pops) the last element of an array. 
+// Explanation - The pop() method removes (pops) the last element of an array.
 //The pop() method changes the original array.
 // It reduces the array’s length by one and returns the removed element
 
-// Program 1 
-
+// Program 1
 
 /*
 let nameofCity = ["Pune", "Hyderbad", "Banglore", "Mumbai", "Solapur" ];
 console.log(nameofCity.pop());
 */
 
-
-// Program 2 
-
+// Program 2
 
 /*
 function func () {
@@ -320,40 +258,40 @@ func();
 
 // Program 3
 
-let myFavCoutries = ["India", "united States", "New Zealand", "San Francisco", "Massachusetts", "Singapore",];
+let myFavCoutries = [
+  "India",
+  "united States",
+  "New Zealand",
+  "San Francisco",
+  "Massachusetts",
+  "Singapore",
+];
 let popMyFavCoutries = myFavCoutries.pop();
 // console.log(popMyFavCoutries);
 // console.log(myFavCoutries);
 
-
 // Program 4
 
-let array = ["1", "2", "3", "4", "5" ];
+let array = ["1", "2", "3", "4", "5"];
 //console.log(array.pop());
-
 
 // Program 5
 
-let arrayList = ["Hello", "world", "GeeksforGeeks" ,"JavaScript", "Reactjs"];
+let arrayList = ["Hello", "world", "GeeksforGeeks", "JavaScript", "Reactjs"];
 // console.log(arrayList.pop());
 // console.log(arrayList);
-
-
-
 
 // 3 JavaScript Array unshift() Method
 
 // JavaScript Array unshift() Method is used to add one or more elements to the beginning of the given array.
 // This function increases the length of the existing array by the number of elements added to the array.
-// Return Value - This function returns the new length of the array after inserting the arguments at the beginning of the array. 
-
+// Return Value - This function returns the new length of the array after inserting the arguments at the beginning of the array.
 
 /*
 let browsers = ["Crome", "Mozila", "InternetExplore", "Opera" ]
 console.log(browsers.unshift("Safari"));
 console.log(browsers);
 */
-
 
 /*
 
@@ -363,52 +301,56 @@ console.log(myLangString);
 console.log(myLang);
 */
 
-
 // 4. JavaScript Array shift() Method
 
 // JavaScript Array shift() Method removes the first element of the array thus reducing the size of the original array by 1.
 // Return Value: This function returns the removed first element of the array. If the array is empty then this function returns undefined.
-
 
 // let originalArray = ["a", "b", "c", "d", "e"];
 // let shiftArray = originalArray.shift();
 // console.log(shiftArray);
 // console.log(originalArray);
 
-
 // 5 JavaScript Array splice() Method
-
 
 // JavaScript Array splice() Method is an inbuilt method in JavaScript that is used to change the contents of an array by removing or replacing existing elements and/or adding new elements. It modifies the original array and returns an array of the removed elements.
 
 // Return Value - While it mutates the original array in place, still it returns the list of removed items. In case there is no removed array it returns an empty array.
 
- 
 let arrayOfFruites = ["Apple", "Banana", "Guava", "Orange", "Mango"];
 //console.log(arrayOfFruites.splice(1, 3, "sweetcorn", "beetroot" ,"carrot"));
 //console.log(arrayOfFruites);
 
-
-let placesToVisit = ["California","Texas", "Floria", "Virginia", "Washington" , "Ohio"];
+let placesToVisit = [
+  "California",
+  "Texas",
+  "Floria",
+  "Virginia",
+  "Washington",
+  "Ohio",
+];
 //console.log(placesToVisit.splice(1,4 , "Massachusetts" , "Michigan" , "Minnesota" ));
 //console.log(placesToVisit);
 
-
-let orrArray = [1,2,3,4,5,6,7,8,9,10];
+let orrArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //console.log(orrArray.splice(3, 5, 10, 20, 30,40,50));
 //console.log(orrArray);
 
-
-let currerncies = ["INR", "USDollar", "Rubel", "Dinar", "Euro", "SingaporeDollar"];
+let currerncies = [
+  "INR",
+  "USDollar",
+  "Rubel",
+  "Dinar",
+  "Euro",
+  "SingaporeDollar",
+];
 //console.log(currerncies.splice(1,3));
 //console.log(currerncies);
-
 
 // const months = ["jan", "feb", "mar", "apr", "may"];
 // const indexToUpdate = months.indexOf("mar");
 // months.splice(indexToUpdate, 2, "March")
 // console.log(months);
-
 
 // let years = [2000,  20001, 2002, 2003, 2004, 2005, 2006, 2007,2008, 2009, 2010];
 // let indexToUpdateYear = years.indexOf(2005);
@@ -416,15 +358,10 @@ let currerncies = ["INR", "USDollar", "Rubel", "Dinar", "Euro", "SingaporeDollar
 // years.splice(indexToUpdateYear, 5 , 1993  );
 // console.log(years);
 
-
-
-
 let numberOfMonths = ["Jan", "Feb", "Mar", "Apr", "may"];
 const indexToDeleteMonths = numberOfMonths.indexOf("Apr");
-numberOfMonths.splice(indexToDeleteMonths, 3, "April" )
+numberOfMonths.splice(indexToDeleteMonths, 3, "April");
 //console.log(numberOfMonths);
-
-
 
 //let cityOfUnistedStates = ["NewYork0", "Chicago1", "SanDiego2", "Asutin3", "SanFrancisco4", "Dallas5"];
 //console.log(cityOfUnistedStates.splice(3,2));
@@ -432,37 +369,27 @@ numberOfMonths.splice(indexToDeleteMonths, 3, "April" )
 //cityOfUnistedStates.splice(cityOfUnistedStates.length, 0, "myelement")
 //console.log(cityOfUnistedStates);
 
-
-
-let compLang = ["HTML" , "CSS", "JavaScript", "Express", "CSS" ];
+let compLang = ["HTML", "CSS", "JavaScript", "Express", "CSS"];
 //console.log(compLang.splice(-1, 0, "Nodejs"));
 //compLang.splice(compLang.length, 0, "Java")
-//compLang.splice( 1, 0, "MongoDB"), 
+//compLang.splice( 1, 0, "MongoDB"),
 //console.log(compLang);
-
-
 
 // 6 JavaScript String indexOf() Method
 
 // Syntax   str.indexOf(searchValue , index);
 // The indexOf() method is case sensitive.
 
-
-
-
-// The JavaScript String indexOf() method finds the index of the first occurrence of the argument string in the given string. 
+// The JavaScript String indexOf() method finds the index of the first occurrence of the argument string in the given string.
 //The value returned is 0-based.
 let numbers = [1, 4, 2, 3, 4, 5, 6, 7, 4, 6, 7, 1, 2, 8];
 //console.log(numbers.indexOf(8));
 
-
-let myNumbers = [10,20,30,40,50,60,70,80,90,100 ]
+let myNumbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 //console.log(myNumbers.indexOf(50,1));
-
 
 let str = "Departed Train";
 //console.log(str.indexOf("Train"));
-
 
 // function func () {
 //     let str = "Departed Train"
@@ -472,7 +399,6 @@ let str = "Departed Train";
 
 // func();
 
-
 // 7 JavaScript String lastIndexOf() Method
 
 //The lastIndexOf() method in JavaScript is used to search for the last occurrence of a specified substring within a string.
@@ -480,8 +406,6 @@ let str = "Departed Train";
 // It returns the index of the last occurrence of the specified substring, or -1 if the substring is not found.
 
 // defines the starting index from where the searchvalue is to be searched in the base string backward
-
-
 
 /*
 
@@ -500,44 +424,42 @@ findIndex();
 
 */
 
-
-// Program // 
-
+// Program //
 
 let arrayofNumbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9, 6];
-let result1 = arrayofNumbers.lastIndexOf(6, 5); // Output 3  ( After 5th index it ignores the rest of values ) 
+let result1 = arrayofNumbers.lastIndexOf(6, 5); // Output 3  ( After 5th index it ignores the rest of values )
 //console.log(result1);
 
-
-let result2 = arrayofNumbers.indexOf(6, 5) // Output is 6 ( index number start from start )
+let result2 = arrayofNumbers.indexOf(6, 5); // Output is 6 ( index number start from start )
 //console.log(result2);
-
 
 // 7 JavaScript String includes() Method
 
 // The includes() method returns true if a string contains a specified string. Otherwise, it returns false.
 // Syntax - string.includes(searchvalue, start)
 
-
-
-let newStr = ["HTML", "CSS","JavaScript","Reactjs", "css", "Nodejs","Express", "Mongoose",];
+let newStr = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Reactjs",
+  "css",
+  "Nodejs",
+  "Express",
+  "Mongoose",
+];
 let current = newStr.includes("css", 1);
 //console.log(current);
 
-let multipleNumbers = [0,1,2,3,4,5,6];
+let multipleNumbers = [0, 1, 2, 3, 4, 5, 6];
 let searchIncludes = multipleNumbers.includes(16);
 //console.log(searchIncludes);
-
-
-
 
 // 8 JavaScript Array find() Method
 
 // The find() method in JavaScript returns the first element that satisfies a provided test function.
-// It iterates through each array element, ignoring empty slots, and returns undefined if no match is found. 
+// It iterates through each array element, ignoring empty slots, and returns undefined if no match is found.
 // The original array remains unchanged.
-
-
 
 /*
 const findNumberArray = [1,2,3,4,5,6,7,8,6,9,10];
@@ -549,39 +471,201 @@ console.log(findNumberArray);
 console.log(findResult);
 */
 
-
 // 9  JavaScript Array findIndex() Method
 
+const arrList = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300, 400];
+const resultOne = arrList.map((currElem) => {
+  return currElem * 1;
+});
 
-const arrList = [ 10,20,30,40,50,60,70,80,90,100,200,300,400];
-const resultOne = arrList.map((currElem)=>{
-   return currElem * 1;
-})
+const findIndex = resultOne.findIndex((currElem) => {
+  return currElem >= 60;
+});
 
-const findIndex = resultOne.findIndex((currElem)=> {
-   return currElem >= 60
-})
-
-console.log(findIndex);
-console.log(resultOne);
-
-
+//console.log(findIndex);
+//console.log(resultOne);
 
 // 10 JavaScript Array filter() Method
 
-// Return value: It returns an array of elements that pass the test and an empty array if no elements pass the test. 
+// Return value: It returns an array of elements that pass the test and an empty array if no elements pass the test.
+
+// Question 1 - Array Filter Method
+
+let arrNumberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let arrResult = arrNumberList.filter((currElem) => {
+  return currElem > 5;
+});
+
+//console.log(arrResult);
+
+// Question 2 - Array Filter Method
+
+let priceofProducts = [7900, 8000, 6500, 9999, 6570, 10000, 11249, 12450];
+let displayFilteredValue = priceofProducts.filter((curElem) => {
+  return curElem > 7450 && curElem < 10000;
+});
+
+//console.log(displayFilteredValue);
+
+// Question 3 - Array Filter Method
+
+/// *********************************************************************************************
+let productList = ["Kitchen", "Furniture", "HomeDecor", "GardenOutdoor"];
+
+let displayProductList = productList.filter((curElem) => {
+  curElem.length;
+});
+
+//console.log(displayProductList);
+
+/// *********************************************************************************************
+
+// Question 4 - Array Filter Method
+// User want to delete some element
+
+let value = 45;
+let cartList = [50, 78, 98, 45, 20, 63, 10, 65];
+let cartFiltetedList = cartList.filter((currElem) => {
+  return currElem != 45;
+});
+
+//console.log(cartFiltetedList);
+
+// *********************************************************************************************
+
+const products = [
+  { name: "laptop", price: 1200 },
+  { name: "phone", price: 800 },
+  { name: "Tablet", price: 300 },
+  { name: "smartwatch", price: 150 },
+];
+
+const filteredProducts = products.filter((currElem) => {
+  return currElem.price <= 500;
+});
+
+//console.log(filteredProducts);
+
+// *********************************************************************************************
+
+/*
+let obj = {
+    Students : [{
+        "name" : "Raj",
+        "rollNumber" : 100,
+        "marks" : 99,
+        "age" : 18
+    },
+
+    {
+        "name" : "Aman",
+        "rollNumber" : 223,
+        "marks" : 69,
+        "age" : 17
+    },
+
+    {
+        "name" : "Vivek",
+        "rollNumber" : 253,
+        "marks" : 89,
+        "age" : 21
+    },
+
+    ]
+}
+
+
+let newArray = obj.Students.filter((currElem)=> {
+    return currElem.age >= 18 && 
+    currElem.rollNumber < 200 && 
+    currElem.marks > 80
+}) 
+
+
+//console.log(newArray);
+
+*/
+
+// *********************************************************************************************
+
+// Find unique elements in the array
+
+let arrayofNum = [1, 2, 3, 4, 5, 4, 6, 7, 6, 8, 9, 10, 11];
+let uniqueValues = arrayofNum.filter((curElem, index, arr) => {
+  // console.log(arr); // Arrays Values
+  // console.log(index); // Index Number
+  // console.log(curElem);  // Only Values
+  // console.log(arr[index]);  // Index Number
+  // console.log(arr.indexOf(curElem));
+  //return arr.indexOf(curElem) === index;
+});
+//console.log(uniqueValues);
+
+//console.log( ...new Set([arrayofNum]));
+
+// 9. JavaScript Sort() Method
+
+// The sort() method in JavaScript sorts the elements of an array in place and returns the sorted array.
+// By default, it sorts the elements as strings in ascending order.
+
+// let sortNumber = [1, 2, 6, 3, 4, 5, 6, 7, 8,6]
+// let sortedArray = sortNumber.sort()
+// console.log(sortedArray);
+
+// let myNumberArray = [9,8,7,6,5,4,3,2,1,4,6,7];
+// let mySorArr = myNumberArray.sort((a,b)=> {
+// if (a>b) return 1
+// if (a<b) return -1;
+// })
+
+// console.log(mySorArr);
+
+////// *********************************** JavaScript String Methods *************************** /////////////////////////////////
+
+// let word = ["Apple", "Banana", "Orange",  "Guava"];
+// let results = word.map((currElem)=> {
+//     return currElem.toUpperCase()
+// })
+
+// console.log(results);
+
+// let number = [1, 2, 3, 4, 5];
+// let myresult = number
+//   .map((currElem) => {
+//     if (currElem % 2 === 0) {
+//       return currElem * currElem;
+//     }
+//   })
+//   .filter((currElem) => currElem != undefined);
+
+// console.log(myresult);
+
+
+
+// let number = [1, 2, 3, 4, 5];
+// const evenNumber = number
+// .map((curElem) => (curElem % 2 === 0 ? curElem * curElem : undefined))
+// .filter ((currElem) => currElem != undefined )
+// console.log(evenNumber);  
 
 
 
 
+// let names = ["ram", "bharat", "laxman"];
+// let preFix = names.map((currElem)=> {
+//     return `Mr ${currElem}`
+// } )
+
+// console.log(preFix);
 
 
 
+let productPrices = [100, 200, 300, 400, 500];
+let totalCartValue = productPrices.reduce((accum, currElem)=> { 
+    return accum + currElem
+}, 0);
 
- 
-
-
-
+console.log(totalCartValue);
 
 
 
@@ -611,8 +695,7 @@ console.log(resultOne);
 
 // The Array slice() method returns selected elements in an array as a new array. It selects from a given start, up to a (not inclusive) given end. This method does not change the origina
 
-// Return value -  This method returns a new array containing some portion of the original array. 
-
+// Return value -  This method returns a new array containing some portion of the original array.
 
 /*
 const sliceFun = function () {
@@ -625,171 +708,11 @@ sliceFun();
 
 */
 
-
-// 7 Searching Filtering Methods 
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 7 Searching Filtering Methods
 
 // 4. JavaScript Array Filter Method
 
 // const myNum = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
-// const myFilter = myNum.filter((num)=> num > 5) 
+// const myFilter = myNum.filter((num)=> num > 5)
 // console.log(myFilter);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
