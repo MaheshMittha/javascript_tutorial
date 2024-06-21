@@ -134,6 +134,40 @@ let singleQuoate = 'My Name is "John Smith" & i am full stack developer'
 
 
 
+// *****************************************************************************/
+
+
+// *****  JavaScript Array slice()
+
+
+// let fruits = ["Apples", "Banana","Guava","Orange", " Lemon", "Mango"];
+// let citrus = fruits.slice(0,1)
+// console.log(citrus);
+
+
+// let codeEditor = "vs code editor and eclipse";
+// let result = codeEditor.slice(0,7)
+// console.log(result);
+
+
+let myProjectName = ["javascript", "development"]
+let result = myProjectName.map((currElem, index)=>{
+    return `${currElem} ${index}`;
+})
+
+
+
+
+console.log(result);
+
+
+
+
+
+
+
+//let result = myProjectName.indexOf("development")
+//console.log(result);
 
 
 
