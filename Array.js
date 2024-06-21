@@ -660,12 +660,12 @@ let uniqueValues = arrayofNum.filter((curElem, index, arr) => {
 
 
 
-let productPrices = [100, 200, 300, 400, 500];
-let totalCartValue = productPrices.reduce((accum, currElem)=> { 
-    return accum + currElem
-}, 0);
+// let productPrices = [100, 200, 300, 400, 500];
+// let totalCartValue = productPrices.reduce((accum, currElem)=> { 
+//     return accum + currElem
+// }, 0);
 
-console.log(totalCartValue);
+// console.log(totalCartValue);
 
 
 
