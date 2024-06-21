@@ -88,8 +88,8 @@ let singleQuoate = 'My Name is "John Smith" & i am full stack developer'
 // console.log(...matches);
 
 
-let str = "Hello javaScript, welcome to our world best javaScript cource";
-let matchResult = str.matchAll("javaScript")
+//let str = "Hello javaScript, welcome to our world best javaScript cource";
+//let matchResult = str.matchAll("javaScript")
 // console.log(...matchResult); 
 
 // **** Approach 1 
@@ -107,6 +107,36 @@ let matchResult = str.matchAll("javaScript")
 // for (let {index} of matchResult) { 
 //     console.log(index);
 // }
+
+
+// ******* Includes Methods
+
+
+// let str = "Hello javaScript, welcome to our world best javaScript cource";
+// let result = str.includes(/java/gi);
+// console.log(result);
+
+
+// ******* startsWith() Method
+
+
+// let str = "Hello javaScript, welcome to our world best javaScript cource";
+//let result = str.startsWith("Hello")
+// let result = str.startsWith("welcome", 18)
+// console.log(result);     
+
+// ******* startsWith() Method
+
+
+// let str = "Hello javaScript, welcome to our world best javaScript cource";
+// let result = str.endsWith("cource");
+// console.log(result);
+
+
+
+
+
+
 
 
 
