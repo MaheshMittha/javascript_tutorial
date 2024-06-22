@@ -148,13 +148,13 @@ let myNumForEachArr = myNum.forEach((ele, index) => {
 
 // Question 1.  Map Program Start Here //
 
-// let myFruitesArray = ["Apple", "Banana", "Grapes", "Sweetcorn"];
-// let myMapArray = myFruitesArray.map((ele , index )=> {
-//     return ( `${ele} ${index} `)
+let myFruitesArray = ["Apple", "Banana", "Grapes", "Sweetcorn"];
+let myMapArray = myFruitesArray.map((ele , index )=> {
+    return ( `${ele} ${index} `)
 
-// })
-// console.log(myMapArray);
-// console.log(myFruitesArray);
+})
+console.log(myMapArray);
+console.log(myFruitesArray);
 
 // Program End Here //
 
