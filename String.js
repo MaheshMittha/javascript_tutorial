@@ -165,13 +165,13 @@ let singleQuoate = 'My Name is "John Smith" & i am full stack developer';
 
 // **** JavaScript String at() Method
 
-// String.at() method is used to find the character at the specified index. This method is capable of taking both positive and negative indexes. 
+// String.at() method is used to find the character at the specified index. This method is capable of taking both positive and negative indexes.
 // The positive index finds the element from the start of the array and the negative index is used to find the element from the end of the array.
 // Return Value -  It returns a single character string that contains the element present at the specified location.
 
 // 1. Program
 
-// Original String 
+// Original String
 
 // let str = "JavaScript is a scripting language";
 
@@ -181,9 +181,6 @@ let singleQuoate = 'My Name is "John Smith" & i am full stack developer';
 // let value1 = str.at(-4); // output > u
 // console.log(value);
 // console.log(value1);
-
-
-
 
 // ***** JavaScript String fromCharCode() Method
 
@@ -215,21 +212,16 @@ let singleQuoate = 'My Name is "John Smith" & i am full stack developer';
 // let result = str.charCodeAt(6)
 // console.log(result);
 
-
 // ***** JavaScript String Replacment() Method
 
-let originalString =  "Hello World ! How are you? World";
+let originalString = "Hello World ! How are you? World";
 // let replacedString = originalString.replace(/world/gi, "Alice");
 // console.log(replacedString);
-
-
-
 
 // ***** JavaScript String toUpperCase() Method
 
 //JavaScript String toUpperCase() method converts the entire string to Upper case.
-// This method does not affect any of the special characters, digits, and the alphabets that are already in the upper case. 
-
+// This method does not affect any of the special characters, digits, and the alphabets that are already in the upper case.
 
 // const str =  "geeksforgeeks";
 // let result = str.toUpperCase();
@@ -239,7 +231,6 @@ let originalString =  "Hello World ! How are you? World";
 // let result = str.toUpperCase();
 // console.log(result);
 
-
 // **** JavaScript String toLowerCase() Method
 
 // The toLowerCase() method in JavaScript converts all the characters in a string to lowercase and returns the resulting string.
@@ -248,40 +239,196 @@ let originalString =  "Hello World ! How are you? World";
 // let result = str.toLowerCase();
 // console.log(result);
 
-
-
 // *** JavaScript String trim() Method
 
 // The trim() method removes whitespace from both sides of a string. It doesn’t alter the original string
-
 
 // const trimstring = function () {
 // let str =  "     geeksforgeeks                       ";
 // console.log(str.length); // Before trim length
 
-
 // let result = str.trim();
-// console.log(result); 
+// console.log(result);
 // console.log(result.length); // After trim lngth
 
 // }
 
 // trimstring();
 
-
 // ****** JavaScript String split() Method
 
-// JavaScript split() method proves invaluable for breaking down strings into arrays of substrings, 
+// JavaScript split() method proves invaluable for breaking down strings into arrays of substrings,
 // utilizing a designated separator as a reference point.
 
+// let str = "apple, banana, guava";
+//  console.log(str);
+// let result = str.split(",").reverse().join(" ");
+// console.log(result);
 
-let 
+// const reverseString = function (str) {
+// var splitString = str.split("")
+// console.log(splitString);
+
+// var reverseArray = splitString.reverse()
+// console.log(reverseArray);
+
+// var joinArray = reverseArray.join("");
+// console.log(joined);
+
+// return joinArray;
+
+// }
+
+// reverseString("Hello")
+
+/// ********* Pring a to z string ****************
+
+//console.log("a".charCodeAt(0));
+// console.log("z".charCodeAt(0));
+
+// for ( let char = 97; char <= 122; char ++) {
+//     console.log(String.fromCharCode(char));
+// }
+
+// ** Program 2
+
+// console.log("a".charCodeAt(0));
+// console.log("z".charCodeAt(0));
+
+// for ( let char = 97 ; char <= 122; char ++ ) {
+// console.log((String.fromCharCode(char)));
+// }
+
+// ********************* ///////////////////////
+
+/// ********* Vowels sare present or not  ****************
+
+// const checkallVowelsPresentOrNot = function (str) {
+//     const vowles = "aeiou";
+//     for ( let char of vowles) {
+//         console.log(char);
+//         console.log(str.includes(char));
+//     }
+
+//     if (!str.includes(char)) {
+//         return false;
+//     }
+
+//     return true;
+
+// }
+
+// console.log(checkallVowelsPresentOrNot("my name is johns milga"));
+
+// const checkAllWVowles = function (str) {
+//   const vowles = "aeiou";
+
+//   for (let char of vowles) {
+//     console.log(char);
+//     console.log(str.includes(char));
+//   }
+
+//   if (!str.includes(char)) {
+//     return false;
+//   }
+
+//    return true;
+// };
+
+// console.log(checkAllWVowles("my name is Mahesh Mittha"));
+
+// ****  Program 3
+
+// const checkwoeles  = function (str) {
+//     const wovels =  "aeiou";
+
+//     for ( let char of wovels ) {
+//         console.log(char);
+//         console.log(str.includes(char));
+//     }
+
+// if (!str.includes(char)){
+//     return true;
+// }
+
+// return false;
+
+// }
+
+// console.log(checkwoeles("mahesh mittha qeiou"));
+
+// ****  Program 3 write a program tp count vowels in a string
+
+// let countVolwels = (str) => {
+//     let vowels = "aeiou";
+//     let count = 0;
+
+//     for ( let char of str) {
+//         console.log(char);
+//         console.log();
+
+//     if (vowels.includes(char)) {
+//         count++;
+//     }
+// }
+//     return count;
+// };
+
+// console.log(countVolwels("Hello a i o u world!"));
+
+// ****  Program 3 write a program tp count vowels in a string
+
+// const countingVolwels = (str) => {
+//   let volwels = "aeiou";
+//   let count = 0;
+
+//   for (let char of str) {
+//      console.log(char);
+
+//     if (volwels.includes(char)) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// };
+
+// console.log(countingVolwels("Hello a i o u world"));
+
+// ***** Write a program javascript function to check if a given string is pangram or not ?
+
+// const PangramCheck = (str) => {
+//   let inputArr = str.toLowerCase().split("");
+//   // console.log(inputArr);
+//   const values = inputArr.filter(
+//     (currElem) =>
+//       currElem.charCodeAt() >= "a".charCodeAt() &&
+//       currElem.charCodeAt() <= "z".charCodeAt()
+//   );
+//   // console.log(values);
+//   return [...new Set(values)].length === 26;
+// };
+
+// console.log(PangramCheck("The quick $ brown fox jumps over the lazy dog"));
 
 
 
 
+// ****** Program no 2
 
+const CheckPanagram = (str) => {
+  let inputArray = str.toLowerCase().split("");
+//   console.log(inputArray);
+  let values = inputArray.filter(
+    (currElem) =>
+      currElem.charCodeAt() >= "a".charCodeAt() &&
+      currElem.charCodeAt() <= "z".charCodeAt()
+  );
+//   console.log(values);
+  return [...new Set(values)].length === 26;
+};
 
+console.log(CheckPanagram("The quick $ brown fox jumps over the lazy dog"));
 
 
 
