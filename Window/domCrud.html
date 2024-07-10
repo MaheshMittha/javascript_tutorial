@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CRUD HTML</title>
+</head>
+
+<body>
+    <div>
+        <h1>SIMPLE HTML DOM CRUD</h1>
+        <input type="text" id="inputfield">
+        <button class="btn">Click Me</button>
+        <div class="todoListElem">
+        </div>
+
+
+        <!-- <p id="todo-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, hic? Maiores labore est atque numquam accusamus adipisci corrupti praesentium ullam, saepe reprehenderit distinctio optio ipsa eius, cupiditate aperiam reiciendis ut.</p> -->
+    </div> <br>
+
+    <script>
+
+        let inputElem = document.getElementById("inputfield");
+        let clickBtn = document.querySelector(".btn");
+        let todoElem = document.querySelector(".todoListElem");
+
+
+        const addToDo = () => {
+            let pElem = document.createElement("p");
+            pElem.textContent = inputElem.value;
+            todoElem.append(pElem)
+            inputElem.value =null;
+        }
+
+        clickBtn.addEventListener("click", () => {
+            addToDo();
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -49,7 +49,30 @@ for ( let item of findElementbyTag) {
 // ? 4. querySelector
 
 const getEleemntbyQuerySelector = document.querySelector('#heading')
-console.log(getEleemntbyQuerySelector.innerText);
+//console.log(getEleemntbyQuerySelector);
+//console.log(getEleemntbyQuerySelector.innerHTML = "World Best Javascript");
+//console.log(getEleemntbyQuerySelector.innerText = "World Best Javascript");
+//console.log(getEleemntbyQuerySelector.textContent = "World Best Javascript");
+
+
+// ? 5. querySelectorAll
+
+
+let querySelectorAll = document.querySelectorAll('li');
+//console.log(querySelectorAll);
+querySelectorAll.forEach((elem , index )=> {
+console.log(elem.innerHTML);
+})
+
+
+
+
+
+
+
+
+
+
 
 
 
