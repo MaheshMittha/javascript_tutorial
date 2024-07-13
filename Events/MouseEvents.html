@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events </title>
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #myButton {
+
+            border-radius: 8px;
+            background-color: #008CBA;
+            font-size: 30px;
+            padding: 12px;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <section>
+        <h1>Mouse Events</h1>
+        <div class="rectangle">Something</div> <br>
+        <button id="myButton">Click Me</button> <br>
+    </section>
+
+
+
+    <script>
+        // get the Element by ID am selector
+        let mybutton = document.getElementById("myButton");
+        let rectDiv = document.querySelector(".rectangle");
+
+
+        const handleMouseEvent = () => {
+            console.log("click");
+            rectDiv.style.backgroundColor = "lightgreen";
+        }
+
+
+        // const handleMouseEvent2 = () => {
+        //     console.log("Click1");
+        //     rectDiv.classList.add("addTransition")
+
+        // }
+
+
+        // const handleMouseEvent3 = () => {
+        //     log("Click2");
+        //     rectDiv.classList.add("addTransition")
+        // }
+
+
+        // const handleMouseEvent4 = () => { 
+        //     console.log("click3");
+        //     rectDiv.classList.add("addTransition")
+        // }
+
+
+        mybutton.addEventListener("click", handleMouseEvent);
+        //mybutton.addEventListener("mouseover", handleMouseEvent2);
+        //mybutton.addEventListener("mouseout", handleMouseEvent3);
+        // mybutton.addEventListener("mousedown", handleMouseEvent4);
+    
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

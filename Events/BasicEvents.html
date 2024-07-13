@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in DOM</title>
+</head>
+<body>
+
+    <!-- Start Inline Events -->
+
+    <!-- <h1>Inline Events</h1>
+    <button id="btn" onclick="alert('Welcome to Javascript')">Javascript onclick</button>
+    <button id="button" ondblclick="alert('Welcome to Reactjs')">React ondblclick</button>
+    <button onmouseover="alert('welcome to MERN')"> MERN onmouseover</button> -->
+
+    <!-- End Inline Events -->
+
+
+
+    <h1>DOM Event Handler</h1>
+    <button id="mybtn">Gretting </button>
+    <button id="mybtn1">Greeting again</button>
+    <button id="mybtn2">HTML</button>
+
+
+
+<script>
+
+    //     <!-- Start DOM Event Handler -->
+    // 1. FAT Arror Function
+
+    // document.getElementById("mybtn").onclick = ()=> {
+    //     alert("Greeting!");
+    // }
+
+    // 2. Traditional Function
+
+    // document.getElementById("mybtn").onclick = function() {
+    //     alert('welcome');
+    // }
+
+    // document.getElementById("mybtn1").onmouseover = ()=> {
+    //     alert('Greeting again');
+    // }
+    //     <!-- End DOM Event Handler -->
+
+
+
+
+    //   **** addEventListener ***** ///////////////
+    // 1. FAT Arror Function
+       /* document.getElementById("mybtn").addEventListener("click", ()=> {
+        alert("Welcome to HTML FAT Arror Function!"); 
+    })
+
+    document.getElementById("mybtn2").addEventListener("click", ()=> {
+        alert("Welcome to JavaScript FAT Arror Function!");
+
+    })
+    */    
+
+    // 2 Traditional Function
+    
+    document
+    .getElementById("mybtn")
+    .addEventListener("click", function(){
+    alert("mybtn");
+    })
+
+    document
+    .getElementById("mybtn1")
+    .addEventListener("mouseover", function(){
+    alert("mybtn1");    
+    })
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+</script>
+    
+
+
+
+
+
+    
+</body>
+</html>
