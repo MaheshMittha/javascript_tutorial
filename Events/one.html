@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+
+<body style="background-color: #414141; color: #fff;">
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/161401/fushimi-inari-taisha-shrine-kyoto-japan-temple-161401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1  "
+                    alt="japan"> </li>
+            <li><img width="200px" id="street"
+                    src="https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="street"></li>
+            <li><img width="200px" id="nightview"
+                    src="https://images.pexels.com/photos/1633791/pexels-photo-1633791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="nightview"></li>
+            <li><img width="200px" id="metro"
+                    src="https://images.pexels.com/photos/23228637/pexels-photo-23228637/free-photo-of-metro-station-in-tokyo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="metro"></li>
+            <hr>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <script>
+
+        //Event Propagation - movement of Events through the DOM
+        //avaScript uses Event Propagation to handle how events travel through the Document Object Model (DOM) when an event occurs and reaches the target element,triggering further actions based on the event.
+        // 1. Bubbling - After targeting, the event traces back its path and moves back up to the root of the DOM. It is in this phase that the event handlers execute. JavaScript executes the associated event handlers in order as the event moves up the DOM tree.
+        // 2. Capturing - This is the first phase in the event propagation process. When an event is triggered, it starts from the root of the DOM tree and then moves down towards the target element. By default, event handlers are not executed in this phase.
+
+
+        // const japan = document.getElementById("japan").addEventListener("click", ()=>{
+        //     alert("japan clicked")
+        // })
+
+
+        // document.getElementById("images").addEventListener("click", (event)=>{
+        //     console.log("clicked inside the ul");  
+        // });
+
+        // document.getElementById("japan").addEventListener("click",()=>{
+        //     console.log("japan clicked");
+        //     event.stopPropagation();
+        // });
+
+
+        // document.getElementById("google").addEventListener("click",(event)=>{
+        //     console.log("Google clicked");
+        //     event.preventDefault();
+        //     event.stopPropagation();
+        // })
+
+
+        // Practice set 
+
+
+        // document.querySelector("#images").addEventListener("click", (event) => {
+        //     //console.log(event.target); // returned - img element 
+        //     //console.log(event.target.parentNode); // returned - li element
+        //     console.log(event.target.tagName); // returned -  tag name - IMG
+        //     if (event.target.tagName === 'IMG') { 
+        //         console.log(event.target.id);
+        //         let removeit = event.target.parentNode.remove(); 
+        //     }
+        // });
+
+
+
+        // Practice set 2
+
+        document.querySelector("#images").addEventListener("click",(event)=> {
+            // console.log(event);
+            //console.log(event.target);
+            console.log(event.target.tagName);
+            //console.log(event.target.id);
+            // console.log(event.target.parentNode);
+            if (event.target.tagName === "IMG") {
+                // console.log(event.target.id);
+                let removeit = event.target.parentNode.remove();
+            }
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
