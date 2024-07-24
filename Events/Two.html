@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+
+
+    <h3>Javascript</h3>
+    <button id="btn">Click to Stop Set Timeout</button>
+
+    <script>
+
+        // const sayMahesh = ()=> {
+        //     console.log("Hey Mahesh");
+        // }
+
+
+        /*
+        const ChangeText = ()=>{
+            document.querySelector("h1").innerHTML = "Best Javascript";
+        }
+
+       const ChangeMe =  setTimeout(ChangeText, 2000)
+
+       document.querySelector("#stop").addEventListener("click",()=> {
+          clearTimeout(ChangeMe)
+          console.log("STOPPED");
+       })
+
+       */
+
+
+
+     // Practice set
+
+
+//     const changeContent = ()=> {
+//         document.querySelector("h3").innerHTML = "React js";
+//     }
+
+//    const ChangeText = setTimeout(changeContent, 2000 );
+
+
+//         document.querySelector('#btn').addEventListener("click", ()=>{
+//             clearTimeout(ChangeText)
+//             console.log("STOPPED1");
+
+//         })
+
+
+
+const Greeting = setTimeout(()=>{
+    document.querySelector("h3").innerHTML = "MERN Stack"
+},2000)
+
+
+
+document.getElementById("btn").addEventListener("click",()=>{
+    console.log("STOPPED3");
+  clearTimeout(Greeting);  
+})
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
