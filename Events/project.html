@@ -14,7 +14,6 @@
     <button id="stop">Stop</button>
 
 
-
     <script>
         // generate randon color
 
@@ -31,17 +30,17 @@
 
         const startChangeHandler = () => {
 
+            
             changebgColor = () => {
                 document.body.style.backgroundColor = randomColor();
                 console.log("STARTED");
             }
             intervalID = setInterval(changebgColor, 1000);
 
-
         };
 
         const stopChangeHandler = () => {
-            document.getElementById("stop").addEventListener("clcik", () => {
+            document.getElementById("stop").addEventListener("click", () => {
             })
             clearInterval(intervalID);
             // intervalID = null;
@@ -52,12 +51,6 @@
         })
         document.querySelector("#stop").addEventListener("click", stopChangeHandler, () => {
         })
-
-
-
-
-
-
 
 
     </script>
