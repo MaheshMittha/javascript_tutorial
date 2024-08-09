@@ -223,14 +223,72 @@ function UserData (username, password, isLogged) {
     this.username = username;
     this.password = password;
     this.isLogged = isLogged;
-    return this;
+    //return this;
+
+    this.greeting = function () {
+        console.log(`Welcome ${this.username}`);
+    }
 }
 
 const UserDataOne = new UserData ("Lucy", 10, true)
 const UserDataTwo = new UserData ("Alice", 20, false)
 
-console.log(UserDataOne);
-console.log(UserDataTwo);
+//console.log(UserDataOne.constructor);
+//console.log(UserDataTwo);
+
+
+// ----------------------------------------------------------------------------//
+
+
+/// ****** Prototype Object ******* ///
+
+
+// *** Program 1
+
+
+function multiplebY5(num) {
+    return num*5
+}
+
+multiplebY5.power = 2;
+
+console.log(multiplebY5(5));
+console.log(multiplebY5.power);
+console.log(multiplebY5.prototype); // Prototype provides methods and internal properties.
+
+
+// *** Program 2
+
+function createUser ( username, score ) {
+this.username = username;
+this.score = score;
+}
+
+createUser.prototype.increment = function () {
+    this.score++;
+}
+
+createUser.prototype.PrintMe = function () {
+    console.log(`price ${this.score}`);
+}
+
+const chai = new createUser("chai" , 25 );
+const tea = createUser("tea" , 250 );
+
+
+chai.PrintMe();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
