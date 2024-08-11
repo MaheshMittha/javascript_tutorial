@@ -29,3 +29,5 @@ console.log(cources.CreateId()); // Static  - TypeError: cources.CreateId is not
 
 
 
+
+
