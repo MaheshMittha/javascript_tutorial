@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lexical Scoping & Closures</title>
+</head>
+
+<body style="background-color: #313131;">
+
+</body>
+
+</html>
+
+<script>
+
+  /*
+  function init() {
+      let name = "Mozilla"; 
+      function displayName() {
+        console.log(name); 
+      }
+      displayName();
+    }
+    init();
+    */
+
+
+
+  /*  
+  function outer() {
+    let name = "mahesh";
+  
+    function inner() {
+      console.log("inner", name);
+    }
+    inner();
+  }
+  console.log("TOO Outer", "name");
+  */
+
+
+  // let username = "om"
+
+  // function local (){
+  //   let sirname = "mittha"
+  //   console.log(username);
+
+  // function inner(){
+  //   console.log(sirname);
+  // } 
+  //  return inner
+
+  // }
+  // const data = local();
+  // console.log(data());
+
+
+  // Closure 
+
+  // function subscribe(){
+  //   //local scope
+  //   var username = "parth";
+  // function displayName(){
+  //   alert(username)
+  // }  
+  // displayName();
+  // } subscribe();
+
+
+
+  // function MakeFunc() {
+  //   var name = "Mozila";
+  //   function Displayname() {
+  //     console.log(name);
+  //   }
+  //   return Displayname;
+
+  // }
+  // const myFunc = MakeFunc();
+  // myFunc();
+
+
+
+  // Write closure function
+
+  var username = "Mahesh";
+  function outerFunc() {
+    var name = "Firefox";
+
+    function innerScope() {
+      console.log(name, username);
+    }
+    return innerScope;
+
+  }
+
+  const myNewFunc = outerFunc();
+  myNewFunc()
+
+
+  // Write closure function
+
+  const e = 10;
+  function sum(a) {
+    return function (b) {
+      return function (c) {
+        return function (d) {
+          return a + b + c + d + e;
+        };
+      };
+    };
+  }
+
+  //console.log(sum(1)(2)(3)(4)); // log 20
+
+
+  // Interview Based Question
+  // Ques 1 :  What will be the output of this function
+
+
+  // var count = 10;
+  // (function printCount() {
+  //   if (count === 0) {
+  //     let count = 1; // Shawdowing
+  //     console.log(count); // Log 1
+  //   }
+  //   console.log(count); // Log 0
+  // })();
+
+
+  // Ques 2 : Write function that would allow you to do this
+
+
+  function createBase(num) {
+    return function(innerNum){
+      return console.log(innerNum + num);
+    };
+  }
+
+  var addSix = createBase(6);
+  addSix(10)
+  addSix(21)
+
+
+
+
+
+
+
+</script>
