@@ -134,14 +134,135 @@
 
 
   function createBase(num) {
-    return function(innerNum){
+    return function (innerNum) {
       return console.log(innerNum + num);
     };
   }
 
   var addSix = createBase(6);
-  addSix(10)
-  addSix(21)
+  //addSix(10) // return 16
+  //addSix(21) // return 27
+
+
+  // Closure In JavaScript
+  // Ques 3:  Time Optimization
+
+
+  //  function find(index){
+  //   let a = [];
+  //   for (let i = 0; i < 100000; i++) {
+  //     a[i] = i * i;
+  //     console.log(a[index]);
+
+  //   }
+  //  }
+  //  console.time("6")
+  //  find(6);
+  //  //console.timeEnd("6");
+  //  //console.time("12");
+  //  find(12);
+  //  //console.timeEnd("12");
+
+
+
+  // Round 2
+  // Ques 3 - : Write function that would allow you to do this with settimeout closure 
+
+  //   function a () {
+  //     for (var i = 0; i < 3; i++) {   
+  //       setTimeout(function log () {
+  //         console.log(i); // What is logging (with Var - 3 its block scope) with let variables - 0 , 1 , 2  
+  //       },i * 1000)
+  //   } 
+  // }
+
+  // a();
+
+
+
+  // for (let i = 0; i < 3; i++) {
+  //   function inner(i) {
+  //     setTimeout(function log(){
+  //     console.log(i);  
+  //   },1000 *1 )
+  //   } inner(i)
+  // } 
+
+  // Ques 3 - : Write function how would you create a closue a ptivate variable
+
+  //   function counter () {
+  //     var _counter = 0;
+
+  //   function add (increament) {
+  //     _counter += increament;
+  //   }  
+
+  //  function retrive () {
+  //   return "Counter: " + _counter;
+  //  } 
+
+  //  return {
+  //   add,
+  //   retrive,
+  //  }
+
+  //   }
+
+  //   const c = counter()
+  //   c.add(5);
+  //   c.add(10);
+  //   console.log(c.retrive());
+
+
+  // Ques 4:  Make the function runs only once 
+
+
+  // var view;
+  // function likeTheVideo() {
+  //   let called = 0;
+  //   return function () {
+  //     if (called > 0) {
+  //       console.log("Already subcribed to roadside Coder");
+  //     } else {
+  //       view = "RoadSideCoder";
+  //       console.log("Subcribe to", view);
+  //       called++;
+  //     }
+  //   }
+  // }
+
+  // let isSubscribed = likeTheVideo()
+  // isSubscribed();
+  // isSubscribed();
+  // isSubscribed();
+  // isSubscribed();
+  // isSubscribed();
+
+
+
+  
+    // Ques 5: Closure in javascript Once polyfill
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
